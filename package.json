@@ -1,0 +1,27 @@
+{
+  "name": "elevenlabs-twilio-websocket-relay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/websocket": "^11.0.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.7.0",
+    "twilio": "^5.5.1",
+    "websocket": "^1.0.35",
+    "ws": "^8.18.1"
+  },
+  "description": ""
+}
