@@ -31,4 +31,8 @@ fastify.listen({ port: process.env.PORT || 8000, host: "0.0.0.0" }, (err, addres
   console.log(`Server listening at ${address}`);
 });
 
+// Keep-alive route for uptime monitoring (e.g. UptimeRobot or cron)
+fastify.get("/ping", async (request, reply) => {
+  reply.send({ status: "ok", time: new Date().toISOString() });
+});
 
